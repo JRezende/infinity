@@ -1,0 +1,30 @@
+<header>
+  <div data-role="header">
+    
+    <h1>Infinity App</h1>
+
+    <div class="navbar navbar-fluid-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="content">
+            <div class="link-home">
+              <%= link_to "Início", root_path, :class => 'brand' %>
+            </div>
+            <div class="container-fluid">
+              <% if model_logged %>
+                <ul class="nav nav-user">
+                  <li><%= link_to "Editar #{model_logged.class.to_s}", "/admin/#{model_logged.class.to_s.downcase!}s/#{model_logged.id}/edit" %></li>
+                  <li><%= link_to "Sair", "admin/#{model_logged.class.to_s.downcase!}s/logout", :method => :delete, :confirm => "Você tem certeza?" %></li>
+                </ul>
+              <% else %>                
+                <h4 class="textoHeader">
+                  Cadastra-se gratuitamente ou entre com seu usuário.
+                </h4>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /header -->
+</header>

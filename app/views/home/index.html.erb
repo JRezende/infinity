@@ -1,0 +1,30 @@
+<% if model_logged %>
+
+	<fieldset class="ui-grid-a">
+	    <div class="ui-block-a">
+			<%= link_to "Editar Dados Cadastrais", edit_user_registration_path %>
+		</div>
+	    <div class="ui-block-b">
+			<%= link_to "Cadastrar Loja", destroy_user_session_path, method: :delete, data: {confirm: 'Você tem certeza?'}%>
+		</div>
+	</fieldset>
+
+<% else %>
+    <fieldset class="ui-grid-a">
+    	<div class="ui-block-a">
+    		
+		</div>
+		<div class="ui-block-b">
+		
+		</div>
+	</fieldset>
+
+	<div class="ui-grid-a">
+		<div class="ui-block-a" style="padding: 0;">
+			<div class="ui-bar ui-bar-a" style="height:60px"><%= link_to "Entrar", new_user_session_path %></div>
+		</div>
+		<div class="ui-block-b" style="padding: 0;">
+			<div class="ui-bar ui-bar-a" style="height:60px"><%= link_to "Cadastrar",new_user_registration_path %></div>
+		</div>
+	</div><!-- /grid-b -->
+<% end %>

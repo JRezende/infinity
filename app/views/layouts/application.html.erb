@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Infinity</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<!-- <link rel="stylesheet" href="/assets/stylesheets/jquery.mobile.css"/>
+	<link rel="stylesheet" href="/assets/stylesheets/jquery.mobile.theme.css"/>
+	<script src="/assets/javascripts/jquery.mobile.js"></script>
+	
+	<link rel="stylesheet" href="../stylesheets/application.css"/>
+	-->
+	<link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+	<%# stylesheet_link_tag 'default', :media => "all" %>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/theme-classic/theme-classic.css" />	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<div data-role="page">
+		
+
+			<%= render 'layouts/navigation' %>
+
+			<div role="main" class="ui-content">
+          		<%= yield %>
+			</div><!-- /content -->
+
+		<footer>
+			<div data-role="footer" data-position="fixed">
+				<h4>@Infinity App - 2016</h4>
+			</div><!-- /footer -->
+		</footer>
+	</div><!-- /page -->
+</body>
+</html>
