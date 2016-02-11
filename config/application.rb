@@ -27,5 +27,10 @@ module Infinity
     #config.assets.initialize_on_precompile=false
     #config.serve_static_assets = true
     config.serve_static_files = true
+
+    config.i18n.available_locales = [:en, :"pt-BR"]
+    config.i18n.default_locale = :"pt-BR"
+    I18n.enforce_available_locales = false
+
   end
 end

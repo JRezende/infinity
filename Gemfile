@@ -36,19 +36,26 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "jquery_mobile_rails", "1.3.2"
 gem 'devise'
 
+#gem 'devise-i18n'
+gem 'devise-i18n-views'
+
 gem 'phonegap-rails'
 
 gem 'rails_12factor', group: :production
 
-gem 'puma'
+#gem 'puma'
 #gem 'activerecord-jdbcpostgresql-adapter'
+
+gem 'rails-i18n'
+
+gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 
 group :development, :test do
   gem 'mysql2'
   #gem 'pg'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  #gem 'byebug'
   #gem 'debugger'
 end
 

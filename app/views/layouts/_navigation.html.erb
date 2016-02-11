@@ -13,8 +13,10 @@
             <div class="container-fluid">
               <% if model_logged %>
                 <ul class="nav nav-user">
-                  <li><%= link_to "Editar #{model_logged.class.to_s}", "/admin/#{model_logged.class.to_s.downcase!}s/#{model_logged.id}/edit" %></li>
-                  <li><%= link_to "Sair", "admin/#{model_logged.class.to_s.downcase!}s/logout", :method => :delete, :confirm => "Você tem certeza?" %></li>
+                  <li><%= link_to "Editar usuario", edit_user_registration_path %></li>
+                  <li><%# link_to "Sair", destroy_user_session_path, :method => :delete, :confirm => "Você tem certeza?" %>
+                      <%= link_to('Sair', destroy_user_session_path) %>
+                  </li>
                 </ul>
               <% else %>                
                 <h4 class="textoHeader">
