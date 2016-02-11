@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   #before_filter :redirect_to_page_correct
+  
+  respond_to :json
 
   def index
     respond_to do |format|
