@@ -10,13 +10,14 @@
 	<script src="/assets/javascripts/jquery.mobile.js"></script>
 	
 	<link rel="stylesheet" href="../stylesheets/application.css"/>
-	-->
-	<link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
-	<%# stylesheet_link_tag 'default', :media => "all" %>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/theme-classic/theme-classic.css" />	
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />-->
+	<%= stylesheet_link_tag 'application', :media => "all" %>
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="//demos.jquerymobile.com/1.4.5/theme-classic/theme-classic.css" />	
+	<%= javascript_include_tag 'application', :media => "all" %>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 
