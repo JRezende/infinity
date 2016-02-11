@@ -2,9 +2,10 @@ class HomeController < ApplicationController
   #before_filter :redirect_to_page_correct
 
   def index
-    #respond_to do |format|
-    #  format.html # index.html.erb
-    #end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json
+    end
   end
 
   def logged?

@@ -1,17 +1,9 @@
 ##
 ##  General settings
 ##
-#phonegap_path:             '~/Development/phonegap-2.6.0'
-#api_server:                'http://example.com' //This will be accessible through API_SERVER global var
-
-##  Android settings
-#android:
-#   package:                'com.example.appname'
-
-phonegap_path:             '~/Development/phonegap'
-
-api_server:                'http://example.com' #This will be accessible through API_SERVER global var
+phonegap_path: '~/Development/phonegap'
+api_server: 'https://infinity-app.herokuapp.com/'
 
 ##  Android settings
 android:
-   package:                'com.example.infinity'
+   package: 'com.infinit-app.test'
